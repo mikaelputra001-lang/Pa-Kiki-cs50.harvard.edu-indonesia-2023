@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        span{
+            margin-left: 5rem;
+        }
+        #left{
+            margin-left: 3rem;
+        }
+        fieldset{
+            width: 45vw;
+            margin-left: 25vw;
+            height: 20rem;
+        }
+        #submit{
+            margin: 2rem 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <h1>Hitung Kemungkinan Golongan Darah Kamu</h1>
+        <label>Golongan darah Ayah</label>
+        <select id="golDarAyah" name="golDar">
+            <option value='["A","A"]'>AA</option>
+            <option value='["A","O"]'>AO</option>
+            <option value='["B","B"]'>BB</option>
+            <option value='["B","O"]'>BO</option>
+            <option value='["A","B"]'>AB</option>
+            <option value='["O","O"]'>OO</option>
+        </select>
+        <label id="left">Golongan darah Ibu</label>
+        <select id="golDarIbu" name="golDar">
+            <option value='["A","A"]'>AA</option>
+            <option value='["A","O"]'>AO</option>
+            <option value='["B","B"]'>BB</option>
+            <option value='["B","O"]'>BO</option>
+            <option value='["A","B"]'>AB</option>
+            <option value='["O","O"]'>OO</option>
+        </select>
+        <br>
+        <button id="submit" onclick="goldarah_siAnak()">submit</button>
+        <section id="result"></section>
+    </fieldset>
+    <script src="main.js"></script>
+</body>
+</html>
